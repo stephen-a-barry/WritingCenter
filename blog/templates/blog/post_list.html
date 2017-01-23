@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blog</title>
+  <title>My Blog</title>
 </head>
 <body>
-  <h1>This is my blog post template.</h1>
+  <h1>My Blog.</h1>
   {% for post in posts %}
     <div>
-      <p>published: {{ post.published_date }}</p>
-      <h1><a href="">{{ post.title }}</a></h1>
-      <p>{{ post.text|linebreaksbr }}</p>
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.content|linebreaksbr }}</p>
     </div>
   {% endfor %}
 </body>
